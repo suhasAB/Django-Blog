@@ -1,6 +1,5 @@
 django
 gunicorn
 whitenoise
-postgresql
 psycopg2
 django-heroku
