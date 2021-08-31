@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Suhas Anand's Project Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <style>
+            html[theme='dark-mode'] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+            body {
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            background-color: #fdfdfd;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #f00000;
+            border-color: #dc281e;
+        }
+        .masthead {
+            
+            /*background-repeat: no-repeat;
+            background-size: cover;
+            height: fit-content;
+            background-clip: padding-box;
+            background-position: center;
+            text-shadow: 2px 1px #2e2d2d;*/
+            
+            padding-bottom: 5%;
+            box-shadow: 0 2px 8px #E3E7EB;
+            padding-top: 5%;
+            
+            background-color: #0968e4;
+            height: fit-content;
+            font-family: 'tradegothiclt-bold', sans-serif;
+           
+        }
+        h3 {
+            font-size: 2em;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        span {
+            border-right: .05em solid;
+            animation: caret 1s steps(1) infinite;
+            }
+
+        @keyframes caret {
+            50% {
+                border-color: transparent;
+            }
+            }
+ 
+        img{
+            width: 50%;
+            object-fit: contain;
+            
+        }
+        .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+        }
+        
+        .img_big{
+            width: 80%;
+            object-fit: contain;
+            align-content:center;
+        }
+    </style>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-pr shadow" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">SuhasAnandBlogger</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="#">About</a>
+                        </li>
+                        
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+
+        <!-- Footer -->
+        <footer class="py-3 bg-grey">
+            <p class="m-0 text-dark text-center ">Copyright  &copy; Suhas Anand </br> Built on Django </p>
+        </footer>
+    </body>
+</html>
